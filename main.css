@@ -1,0 +1,263 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5em;
+	color: black;
+	text-decoration: none;
+	margin:0;}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	font-size:14px;
+}
+
+/* Navigation Bar */
+nav {
+	padding:50px 0;
+	background-image: url("./assets/header_orange.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color:white;
+	width:100%;
+	text-align:center;
+}
+
+nav:hover {
+	background-image: url("./assets/header_blue.png");
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+
+div.logo {
+	padding:40px 0 180px 0;
+	background-image: url("./assets/Tien_logo_white.png");
+	background-size: 50%;
+	background-repeat: no-repeat;
+    background-position: center;
+}
+
+nav.top ul {
+	margin:0 auto;
+	padding:0;
+}
+
+nav.top ul li {
+	display: inline;
+	padding:0 25px;
+}
+
+nav.top ul li a {
+	color:white;
+	font-size:.75em;
+	text-transform:uppercase;
+}
+
+/* Greeting */
+div.home {
+}
+
+div.greeting {
+	position: relative;
+	height:362.9px;
+	text-align:center;
+	line-height:362.9px;
+	font-size: 2em;
+	opacity: 1;
+    filter: alpha(opacity=0);
+  -webkit-transition: all .55s ease-in;
+  -moz-transition: all .55s ease-in;
+  -ms-transition: all .55s ease-in;
+  -o-transition: all .55s ease-in;
+  transition: all .55s ease-in;
+    }
+
+div.greeting p {
+	opacity:1;
+}
+
+div.greeting[data-position="left"] { left: -20%; }
+div.greeting[data-position="right"] { right: -20%; }
+div.greeting[data-position="left"].viewed {
+  left: 0%;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+div.greeting[data-position="right"].viewed {
+  right: 0%;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+
+
+/* Home Page */
+div.portfolio {
+	width:950px;
+	margin:0 auto;
+	padding-bottom:50px;
+	overflow:auto;
+	;
+}
+
+div.img1, div.img2, div.img3 {
+	background-color:aqua;
+	width:300px;
+	height:300px;
+	display:inline-block;
+	margin-bottom:15px;
+}
+
+div.img2  {
+	margin-right:15px;
+}
+
+div.img3 {
+	margin-left: 15px;
+}
+
+/* Contact */
+
+/* Portfolio */
+
+/* About */
+div.about_me {
+	height: 400px;
+	padding-bottom:50px;
+	border-bottom:1px solid #ddd;
+	max-width:950px;
+	margin:0 auto;
+}
+
+div#tien_photo, div#tien_about, div#map {
+	width:33.33%;
+	float:left;
+	height:100%;
+}
+
+div#tien_about {
+	text-align:center;
+}
+
+div#tien_about p {
+	padding:10px 30px 10px 30px;
+}
+
+div#tien_photo {
+	background-image: url("./assets/tien.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color:white;
+	height:100%;
+}
+
+/* Blog */
+
+/* Footer */
+div.line {
+	max-width:927px;
+	height:1px;
+	background-color:#ddd;
+}
+footer {
+	padding:40px 0;
+	text-align: center;
+}
+
+ul.footer-elements {
+	display:inline-block;
+	margin:0 auto;
+}
+
+ul.footer-elements li {
+	float:left;
+	list-style-type: none;
+	padding:0 30px;
+}
+
+/* Media Queries */
+@media only screen and (max-width:500px) {
+	nav {
+		padding:20px 0 30px 0;
+	}
+	nav.top h1 {
+		padding:20px 0 0 0;
+	}
+	nav.top ul li {
+		display:block;
+		font-size: .75em;
+	}
+	div.greeting {
+		font-size: 1em;
+		height:200px;
+		line-height: 200px;
+	}
+	div.portfolio {
+		width:100%;
+	}
+	div.img1, div.img2, div.img3 {
+		width:50%;
+		height:auto;
+		padding-top: 50%;
+		margin:0;
+		float:left;
+	}
+	div.about_me {
+		width:90%;
+		height:100%;
+		margin:0 20px 0 20px;
+	}
+	div#tien_photo, div#map, div#tien_about {
+		width:100%;
+		float:none;
+		height:500px;
+	}
+	div#tien_about{
+		height:100%;
+	}
+	footer {
+		width:285px;
+		margin:0 auto;
+	}
+	ul.footer-element {
+		padding:20px 0 20px 0;
+	}
+}
+
+@media only screen and (max-width:950px) {
+	nav.top {
+		width:100%;
+	}
+	div.portfolio {
+		width:100%;
+		padding:0 20px 0 20px;
+	}
+	div.img1, div.img2, div.img3 {
+		width:33.33%;
+		height:auto;
+		padding-top: 33.33%;
+		margin:0;
+		float:left;
+	}
+	div.about_me {
+		height:100%;
+		overflow: hidden;
+		margin:50px 20px 0 20px;
+	}
+	div#tien_photo, div#map, div#tien_about {
+		width:50%;
+		height:500px;
+	}
+	div#map {
+		width:100%;
+	}
+	footer {
+		width:285px;
+		margin:0 auto;
+	}
+	ul.footer-element {
+		padding:20px 0 20px 0;
+	}
+}
